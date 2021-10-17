@@ -6,7 +6,7 @@ function index() {
     const [userInfo, setUserInfo] = useState(null);
 
     const router = useRouter();
-    const {uid} = router.query;
+    const uid: any = router.query.uid;
 
     useEffect(() => {
         if(!userInfo && uid){
