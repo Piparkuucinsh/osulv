@@ -23,9 +23,15 @@ const MapPiece: React.FC<any> = ({info}) => {
         }
     }, [players, topPlayer]);
 
+    console.log(topPlayer)
+
     if(topPlayer){
         return (
-            <div className="absolute">
+            <div className="absolute flex items-start justify-start">
+                <div className="">
+                    <h3>#{topPlayer.global_rank}</h3>
+                    <img src={topPlayer.user.avatar_url} alt="user" />
+                </div>
                 <img className="" src={info.image} alt="country state borders" />
             </div>
         )
