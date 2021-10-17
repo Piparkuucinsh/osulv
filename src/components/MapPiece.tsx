@@ -28,11 +28,13 @@ const MapPiece: React.FC<any> = ({info}) => {
     if(topPlayer){
         return (
             <div className="absolute flex items-start justify-start">
-                <div className="">
-                    <h3>#{topPlayer.global_rank}</h3>
-                    <img src={topPlayer.user.avatar_url} alt="user" />
+                <div className="relative">
+                    <div className="absolute">
+                        <h3 className="">#{topPlayer.global_rank}</h3>
+                        <img className="" src={topPlayer.user.avatar_url} alt="user" />
+                    </div>
+                    <img className="" src={info.image} alt="country state borders" />
                 </div>
-                <img className="" src={info.image} alt="country state borders" />
             </div>
         )
     }
