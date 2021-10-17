@@ -1,15 +1,18 @@
 import React from 'react'
 import { mapdata } from './../../data/map';
+import MapPiece from "../components/MapPiece"
+
 
 function DisplayMap() {
     return (
         <div>
             {
-                mapdata.map((data, i: number) => {
+                mapdata.map((info, i: number) => {
                     return(
-                        <div className="">
-                            <img className="absolute" src={data.image} alt="state" />
-                        </div>
+                        <MapPiece 
+                            key={i}
+                            info={info}
+                        />
                     )
                 })
             }
