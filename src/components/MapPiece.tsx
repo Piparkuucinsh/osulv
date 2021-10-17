@@ -23,8 +23,6 @@ const MapPiece: React.FC<any> = ({info}) => {
         }
     }, [players, topPlayer]);
 
-    console.log(topPlayer)
-
     if(topPlayer){
         return (
             <div className="absolute flex items-start justify-start w-full h-screen">
