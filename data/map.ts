@@ -37,7 +37,7 @@ export const mapdata = [
     {
         name:"Rīga",
         players:[],
-        image:"/map/3398.svg"
+        image:"/map/g3398.svg"
     },
     {
         name:"Liepājas novads",
@@ -195,4 +195,3 @@ export const mapdata = [
         image:"/map/g3740.svg"
     },
 ]
-
